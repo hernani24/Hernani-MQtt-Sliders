@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hernani Sliders</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+
+<body style=" background-image: url('https://bit.ly/3vGUyFK'); background-repeat: no-repeat; background-size: cover;">
+    <br><br>
+    <center>
+        <h1 style="color: white;">
+            <b>ADAFRUIT CLUE SLIDERS</b></h1>
+
+        <h4 id="status" style="color: white;">Connecting..</h4><br><br>
+    </center>
+
+    <!-- Accelerometer -->
+    <div class="container">
+        <div class="row">
+            <!-- div for ACCELEROMETER  -->
+            <div class="col-sm">
+                <div class="card" style="width: 33rem; text-align: center; ">
+                    <h5 class="text text-center font-weight-bolder">ACCELEROMETER</h5>
+                    <p>X: <span id="accelXRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="-1023" max="1023" value="0" class="slider" name="accelXRange">
+                    </div>
+                </div>
+            </div>
+            <!-- div for ACCELEROMETER  -->
+            <div class="col-sm">
+                <div class="card" style="width: 33rem; text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">ACCELEROMETER</h5>
+                    <p>Y: <span id="accelYRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="-1023" max="1023" value="0" class="slider" name="accelYRange">
+                    </div>
+                </div>
+            </div>
+            <!-- div for ACCELEROMETER  -->
+            <div class="col-sm">
+                <div class="card" style="width: 33rem; text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">ACCELEROMETER</h5>
+                    <p>Z: <span id="accelZRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="-1023" max="1023" value="0" class="slider" name="accelZRange">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <!-- Gyroscope -->
+    <div class="container">
+        <div class="row">
+            <!-- div for GYROSCOPE  -->
+            <div class="col-sm">
+                <div class="card" style="width: 33rem; text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">GYROSCOPE</h5>
+                    <p>X: <span id="gyroXRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="-1000" max="1000" value="0" class="slider" name="gyroXRange">
+                    </div>
+                </div>
+            </div>
+            <!-- div for GYROSCOPE  -->
+            <div class="col-sm">
+                <div class="card" style="width: 33rem; text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">GYROSCOPE</h5>
+                    <p>Y: <span id="gyroYRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="-1000" max="1000" value="0" class="slider" name="gyroYRange">
+                    </div>
+                </div>
+            </div><br>
+            <!-- div for GYROSCOPE  -->
+            <div class="col-sm">
+                <div class="card" style="width: 33rem; text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">GYROSCOPE</h5>
+                    <p>Z: <span id="gyroZRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="-1000" max="1000" value="0" class="slider" name="gyroZRange">
+                    </div>
+                </div>
+            </div><br>
+        </div>
+    </div><br>
+
+    <!-- Magnetic -->
+    <div class="container">
+        <div class="row">
+            <!-- div for magnetic  -->
+            <div class="col-sm">
+                <div class="card" style="width: 33rem; text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">MAGNETOMETER</h5>
+                    <p>X: <span id="magneticXRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="-1000" max="1000" value="0" class="slider" name="magneticXRange">
+                    </div>
+                </div>
+            </div>
+            <!-- div for magnetic  -->
+            <div class="col-sm">
+                <div class="card" style="width: 33rem; text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">MAGNETOMETER</h5>
+                    <p>Y: <span id="magneticYRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="-1000" max="1000" value="0" class="slider" name="magneticYRange">
+                    </div>
+                </div>
+            </div>
+            <!-- div for magnetic  -->
+            <div class="col-sm">
+                <div class="card" style="width: 33rem; text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">MAGNETOMETER</h5>
+                    <p>Z: <span id="magneticZRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="-1000" max="1000" value="0" class="slider" name="magneticZRange">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <!-- Pressure -->
+                <div class="card" style="width: 25rem;text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">PRESSURE</h5>
+                    <p><span id="pressureRange">800</span></p>
+                    <div class="card-body">
+                        <input type="range" min="800" max="1100" value="800" class="slider" name="pressureRange">
+                    </div>
+                </div>
+            </div>
+            <!-- Temperature -->
+            <div class="col-sm">
+                <div class="card" style="width: 25rem;text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">TEMPERATURE</h5>
+                    <p><span id="tempRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="-55" max="125" value="0" class="slider" name="tempRange">
+                    </div>
+                </div>
+            </div>
+            <!-- Humidity -->
+            <div class="col-sm">
+                <div class="card" style="width: 25rem;text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">HUMIDITY</h5>
+                    <p><span id="humidityRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="0" max="100" value="0" class="slider" name="humidityRange">
+                    </div>
+                </div>
+            </div>
+            <!-- Proximity -->
+            <div class="col-sm">
+                <div class="card" style="width: 25rem;text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">PROXIMITY</h5>
+                    <p><span id="proximityRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="0" max="255" value="0" class="slider" name="proximityRange">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <!-- Color container -->
+    <div class="container">
+        <div class="row">
+            <!-- div for red color -->
+            <div class="col-sm">
+                <div class="card" style="width: 25rem;text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">R-COLOR</h5>
+                    <p><span id="colorRRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="0" max="65535" value="0" class="slider" name="colorRRange">
+                    </div>
+                </div>
+            </div>
+            <!-- div for green color -->
+            <div class="col-sm">
+                <div class="card" style="width: 25rem;text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">G-COLOR</h5>
+                    <p><span id="colorGRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="0" max="65535" value="0" class="slider" name="colorGRange">
+                    </div>
+                </div>
+            </div>
+            <!-- div for blue color -->
+            <div class="col-sm">
+                <div class="card" style="width: 25rem;text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">B-COLOR</h5>
+                    <p><span id="colorBRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="0" max="65535" value="0" class="slider" name="colorBRange">
+                    </div>
+                </div>
+            </div>
+            <!-- div for the light intensity -->
+            <div class="col-sm">
+                <div class="card" style="width: 25rem;text-align: center;">
+                    <h5 class="text text-center font-weight-bolder">LIGHT INTENSITY</h5>
+                    <p><span id="colorCRange">0</span></p>
+                    <div class="card-body">
+                        <input type="range" min="0" max="65535" value="0" class="slider" name="colorCRange">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+
+</body>
+<style>
+    /*css for the card*/
+    
+    .card {
+        border-radius: 20px;
+        background: black;
+        color: white;
+        opacity: 0.7;
+        margin-bottom: 20px;
+    }
+    /* for slider */
+    
+    .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 15px;
+        border-radius: 5px;
+        background: #f1b8f8;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+    
+    .slider:hover {
+        opacity: 1;
+    }
+    
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #ca20c5;
+        cursor: pointer;
+    }
+    
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #04AA6D;
+        cursor: pointer;
+    }
+</style>
+<script src="browserMqtt.js"></script>
+<script>
+    var broker = 'wss://mqtt.eclipseprojects.io:443/mqtt'; //intializing broker variable with the eclipse broker
+    var client = mqtt.connect(broker); //initializing variable client with the value of the intialized var broker 
+
+
+    //checks if it is connected to the broker
+    client.on('connect', function() {
+        document.getElementById('status').innerHTML = 'Connected to ' + broker; // once connected, it will display the broker in the status id in html
+        console.log('Connected to ' + broker); //and also display a message in the console if it is connected to the broker
+    })
+
+    //Initializing sliders variable that has the value of the document  slider id 
+    var sliders = document.getElementsByClassName("slider");
+
+    //initializing constant variable events that handles two events
+    const events = {
+        "mouseup": function(event) { //if the user click then release the mouse 
+            console.log(event.target.name, event.target.value); //it will display in the  console the  event target name and value
+            client.publish(`clueSlider/${event.target.name}`, event.target.value); //and will publish the topic event target name and value
+        },
+        "input": function(event) { //input element
+            document.getElementById(event.target.name).innerHTML = event.target.value; //this will display the value in the html
+        }
+    }
+
+    //using foreach loop to loop thru the sliders  
+    for (let slider of sliders) {
+        for (let key in events) { //loop thru the events
+            slider.addEventListener(key, events[key]); //event listener of the slider that accepts the key and index key of the events
+        }
+    }
+</script>
+<html>
